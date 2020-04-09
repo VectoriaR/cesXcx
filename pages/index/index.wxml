@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="page-body">
+    <!-- 是否显示指示点 -->
+    <!-- 自动播放 -->
+    <!-- 自动切换时间间隔 -->
+    <!-- 滑动时长 -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <!-- 遍历图片 -->
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}">
+            <image src="{{item}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="title">
+    <h1 bindtap="cesBtn">Disneyland 出品</h1>
+  </view>
+  <view class="btn-list">
+    <view class="btn-wrap" data-type="zzsy" bindtap="golist">
+      <view>正在热映</view>
+      <view>></view>
+    </view>
+    <view class="btn-wrap" bindtap="golist"  data-type="jjsy">
+      <view>即将上映</view>
+      <view>></view>
+    </view>
+    <view class="btn-wrap" bindtap="golist" data-type="top250" >
+      <view>TOP250</view>
+      <view>></view>
+    </view>
+  </view>
+</view>

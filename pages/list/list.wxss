@@ -1,0 +1,39 @@
+.container {
+  margin: 0;
+  padding: 0 10px;
+}
+.list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.left {
+  flex: 1;
+  background: skyblue;
+}
+image {
+  height: 126px;
+  width: 100%;
+}
+.right {
+  flex: 3;
+  padding: 0 20px;
+}
+.title {
+  font-size: 22px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+}
+.score {
+  color: #f00;
+}
+.small {
+  font-size: 12px;
+  color: #666666;
+}
+.director {
+  color: #666666;
+}

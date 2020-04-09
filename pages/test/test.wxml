@@ -1,0 +1,4 @@
+<view>
+这是test页面
+  <navigator url="/pages/test1/test1">点击跳转页面</navigator>
+</view>

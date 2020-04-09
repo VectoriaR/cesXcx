@@ -1,0 +1,16 @@
+<view class="container">
+<view>{{title}}</view>
+     <view class="list" wx:for="{{list}}" wx:key="id" bindtap="detail" data->
+        <view class="left">
+            <image src="{{item.src}}"></image>
+        </view>
+        <view class="right">
+            <view class="title">
+                <view>{{item.movieName}}</view>
+                <view class="score">0</view>
+            </view>
+            <view class="small">{{item.type}}</view>
+            <view class="director">导演：{{item.directorName}}</view>
+        </view>
+    </view>
+    </view>
