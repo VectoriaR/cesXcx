@@ -5,8 +5,8 @@
     <!-- 自动切换时间间隔 -->
     <!-- 滑动时长 -->
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <!-- 遍历图片 -->
-      <block wx:for="{{background}}" wx:key="*this">
+      <!-- 遍历图片；wx:for -->
+      <block wx:for="{{background}}" wx:key="*this">   
         <swiper-item>
           <view class="swiper-item {{item}}">
             <image src="{{item}}"></image>
@@ -31,5 +31,7 @@
       <view>TOP250</view>
       <view>></view>
     </view>
+    <view bindtap="inner"><button open-type="contact" bindcontact="handleContact">点击我进入个人中心</button></view>
+    <view bindtap="routerChange">点击支付</view>
   </view>
 </view>

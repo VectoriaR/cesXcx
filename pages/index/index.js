@@ -21,5 +21,14 @@ Page({
     wx.makePhoneCall({
       phoneNumber: '15280930781',
     })
-  }
-});
+  },
+  handleContact (e) {
+    console.log(e.detail.path)
+    console.log(e.detail.query)
+},
+routerChange(){
+  wx.navigateTo({
+    url: '/pages/detail/detail',
+  })
+}
+})

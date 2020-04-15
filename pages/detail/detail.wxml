@@ -1,4 +1,9 @@
 <view class="container">
 <view>
+这是详情页面
+</view>
+<view wx:for="{{list}}" wx:for-index="idx" wx:for-item="aa">
+<view>{{aa.name}}</view>
+<view>{{idx}}</view>
 </view>
 </view>

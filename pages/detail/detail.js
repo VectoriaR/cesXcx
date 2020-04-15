@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list:[
+      {id:1,name:"zhangsan1"},
+      {id:2,name:"zhangsan2"},
+      {id:3,name:"zhangsan3"},
+      {id:4,name:"zhangsan4"},
+      {id:5,name:"zhangsan5"},
 
+    ]
   },
 
   /**
